@@ -1,0 +1,86 @@
+<app-nav-item></app-nav-item>
+<div class="container">
+    <h3>Hello {{ username }}</h3>
+    <div class="row">
+        <div class="col-sm-6 my-2">
+            <div class="card">
+                <div class="card-body">
+                    Create new project
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 my-2">
+            <div class="card">
+                <div class="card-body">
+                    Create new task
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 my-2">
+            <div class="card">
+                <div class="card-body">
+                    Join project
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 my-2">
+            <div class="card">
+                <div class="card-body">
+                    Join task
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-sm-6 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-center">Pending projects</p>
+                            <p class="text-center">12</p>
+                            <p class="text-center">All projects</p>
+                            <p class="text-center">30</p>
+                        </div>
+                        <div class="col">
+                            <p class="text-center">GRAPH HERE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-center">Pending tasks</p>
+                            <p class="text-center">35</p>
+                            <p class="text-center">All tasks</p>
+                            <p class="text-center">56</p>
+                        </div>
+                        <div class="col">
+                            <p class="text-center">GRAPH HERE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="mt-4 font-weight-normal">Your tasks</h4>
+    <div *ngFor="let projectTask of projectTasks">
+        <div class="row my-2">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div>{{ projectTask.projectName }}</div>
+                        <div>{{ projectTask.taskName }}</div>
+                        <div>{{ projectTask.startDate}} - {{ projectTask.toDate }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,10 @@
+.tabbar {
+    height: 62px;
+    width: 100%;
+    background-color: #E2F1FF;
+    margin-bottom: 20px;
+}
+
+.inline-item {
+    display: inline-block;
+}
