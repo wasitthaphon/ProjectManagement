@@ -1,4 +1,4 @@
-interface ProjectTask {
+export interface ProjectTask {
     projectName: string;
     taskName: string;
     startDate: string;
