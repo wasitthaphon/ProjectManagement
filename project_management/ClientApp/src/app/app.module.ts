@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { MainTasksComponent } from './main-tasks/main-tasks.component';
 import { from } from 'rxjs';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { TaskDetailComponent } from './task-detail/task-detail.component';
     HomeComponent,
     MainTasksComponent,
     TaskDetailComponent,
+    ProjectDetailComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -40,6 +42,7 @@ import { TaskDetailComponent } from './task-detail/task-detail.component';
       {path: 'home', component: HomeComponent},
       {path: 'tasks', component: MainTasksComponent},
       {path: 'tasks-detail', component: TaskDetailComponent},
+      {path: 'project-detail', component: ProjectDetailComponent},
     ]),
     BrowserModule,
     BsDropdownModule.forRoot(),
