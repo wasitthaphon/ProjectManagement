@@ -14,6 +14,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NavItemComponent } from './nav-item/nav-item.component';
 import { HomeComponent } from './home/home.component';
+import { MainTasksComponent } from './main-tasks/main-tasks.component';
+import { from } from 'rxjs';
+import { TaskDetailComponent } from './task-detail/task-detail.component';
 
 
 @NgModule({
@@ -23,6 +26,8 @@ import { HomeComponent } from './home/home.component';
     RegisterComponent,
     NavItemComponent,
     HomeComponent,
+    MainTasksComponent,
+    TaskDetailComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -33,11 +38,13 @@ import { HomeComponent } from './home/home.component';
       {path: '', component: LoginComponent},
       {path: 'register', component: RegisterComponent},
       {path: 'home', component: HomeComponent},
+      {path: 'tasks', component: MainTasksComponent},
+      {path: 'tasks-detail', component: TaskDetailComponent},
     ]),
     BrowserModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
