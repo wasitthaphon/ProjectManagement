@@ -1,0 +1,34 @@
+<app-nav-item></app-nav-item>
+<div class="container">
+    <app-create-project-progress></app-create-project-progress>
+    <form>
+        <div class="form-group">
+            <label for="projectName">Project name</label>
+            <input class="form-control" type="text" id="projectName" placeholder="project name">
+        </div>
+        <div class="form-group">
+            <label for="projectDetail">Project detail</label>
+            <input id="projectDetail" class="form-control" type="text" placeholder="project detail">
+        </div>
+        <div class="form-group">
+            <label for="projectStartDate">Start date</label>
+            <input id="projectStartDate" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+            <label for="projectEndDate">End date</label>
+            <input id="projectEndDate" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+            <label for="projectSection">Authorized sections</label>
+            <div id="projectSectionn">
+                SECTIONS
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <button class="btn btn btn-outline-primary" type="button" routerLink='/create-project-members'>Next</button>
+            </div>
+        </div>
+    </form>
+
+</div>
