@@ -1,14 +1,21 @@
-<div class="tabbar">
-    <div class="inline-item">
-        Search
+<div class="row">
+    <div class="col">
+        <input type="text" placeholder="search">
     </div>
-    <div class="inline-item font-weight-nornal">
+    <div class="col">
         Username
     </div>
-    <div class="inline-item">
+    <div class="col">
         Avatar
     </div>
-    <div class="inline-item">
-        Options
+    <div class="col">
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Action - 1</button>
+                <button ngbDropdownItem>Another Action</button>
+                <button ngbDropdownItem>Something else is here</button>
+            </div>
+        </div>
     </div>
 </div>
