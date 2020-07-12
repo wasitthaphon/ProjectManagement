@@ -1,0 +1,9 @@
+.sectionList {
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.extra-layout {
+    padding: 5px 10px;
+}

@@ -1,10 +1,35 @@
 .tabbar {
     height: 62px;
-    width: 100%;
     background-color: #E2F1FF;
     margin-bottom: 20px;
 }
 
 .inline-item {
     display: inline-block;
+    margin-right: 10px;
+}
+
+.inline-item-no-margin {
+    display: inline-block;
+}
+
+.search {
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 6px;
+}
+
+@media(max-width: 600px) {
+    #avatar {
+        display: none;
+    }
 }
