@@ -1,6 +1,7 @@
 <app-nav-item></app-nav-item>
 <div class="container">
-    <app-create-project-progress></app-create-project-progress>
+    <h3><a routerLink='/home'>Home</a><a routerLink='/create-project'>/Create new project</a><a routerLink='/create-project-members'>/Add members</a></h3>
+    <app-create-project-progress [progressValue]="66"></app-create-project-progress>
     <div class="row">
         <div class="col-sm-12">
             <a>+ Add task</a>
@@ -8,7 +9,17 @@
     </div>
     <div class="row">
         <div class="col-sm-12">
-            TASKS
+            <ul class="taskList" *ngFor="let taskItem of tasks">
+                <li>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Task name: {{ taskItem.taskName }}</p>
+                            <p>Start date: {{ taskItem.startDate }}</p>
+                            <p>End date: {{ taskItem.endDate}}</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="row">

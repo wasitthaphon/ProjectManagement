@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-create-project-progress',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-project-progress.component.css']
 })
 export class CreateProjectProgressComponent implements OnInit {
-
-  constructor() { }
+  progressStatus = document.getElementById('progressStatus');
+  @Input() progressValue: string;
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

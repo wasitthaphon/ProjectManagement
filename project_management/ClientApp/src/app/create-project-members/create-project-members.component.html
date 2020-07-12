@@ -1,14 +1,25 @@
 <app-nav-item>
 </app-nav-item>
 <div class="container">
-    <app-create-project-progress></app-create-project-progress>
+    <h3><a routerLink='/home'>Home</a><a routerLink='/create-project'>/Create new project</a></h3>
+    <app-create-project-progress [progressValue]="33"></app-create-project-progress>
     <div class="form-group">
         <label for="serach">Authorized members</label>
         <input type="text" class="form-control" placeholder="search">
     </div>
     <div class="row">
         <div class="col-sm-12">
-            MEMBERS
+            <ul class="memberList" *ngFor="let member of members">
+                <li>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Section code: {{member.sectionCode}}</p>
+                            <p>Section name: {{member.sectionName}}</p>
+                            <p>Member name: {{member.memberFirstName}} {{member.memberLastName}}</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="row">
