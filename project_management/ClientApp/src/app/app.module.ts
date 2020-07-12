@@ -19,6 +19,9 @@ import { CreateProjectHeadComponent } from './create-project-head/create-project
 import { CreateProjectMembersComponent } from './create-project-members/create-project-members.component';
 import { CreateProjectTasksComponent } from './create-project-tasks/create-project-tasks.component';
 import { CreateProjectProgressComponent } from './create-project-progress/create-project-progress.component';
+import { JoinTaskComponent } from './join-task/join-task.component';
+import { JoinProjectComponent } from './join-project/join-project.component';
+import { MainProjectsComponent } from './main-projects/main-projects.component';
 
 
 @NgModule({
@@ -35,6 +38,9 @@ import { CreateProjectProgressComponent } from './create-project-progress/create
     CreateProjectMembersComponent,
     CreateProjectTasksComponent,
     CreateProjectProgressComponent,
+    JoinTaskComponent,
+    JoinProjectComponent,
+    MainProjectsComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -51,6 +57,9 @@ import { CreateProjectProgressComponent } from './create-project-progress/create
       {path: 'create-project', component: CreateProjectHeadComponent},
       {path: 'create-project-members', component: CreateProjectMembersComponent},
       {path: 'create-project-tasks', component: CreateProjectTasksComponent},
+      {path: 'join-task', component: JoinTaskComponent},
+      {path: 'join-project', component: JoinProjectComponent},
+      {path: 'projects', component: MainProjectsComponent},
     ]),
     BrowserModule,
   ],

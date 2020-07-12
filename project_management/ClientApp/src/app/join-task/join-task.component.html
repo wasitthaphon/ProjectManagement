@@ -1,0 +1,16 @@
+<app-nav-item></app-nav-item>
+<div class="container">
+    <h3><a routerLink='/home'>Home</a> &gt; Join task</h3>
+    <a>Join by invite code</a>
+    <ul class="taskList" *ngFor="let taskItem of tasks">
+        <li>
+            <div class="card">
+                <div class="card-body">
+                    <p>Project name {{taskItem.projectName}}</p>
+                    <p>Task name {{taskItem.taskName}}</p>
+                    <p>Date {{taskItem.startDate}} - {{taskItem.endDate}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -8,7 +8,7 @@ import { PROJECT_TASKS } from '../model/mock-projects';
 })
 export class CreateProjectTasksComponent implements OnInit {
   tasks = PROJECT_TASKS;
-  
+
   constructor() { }
 
   ngOnInit(): void {
