@@ -1,0 +1,34 @@
+<app-nav-item></app-nav-item>
+<div class="container">
+    <h3><a routerLink="/home">Home</a> &gt; Create new task</h3>
+    <form>
+        <div class="form-group">
+            <label for="projectName">Project name</label>
+            <input id="projectName" type="text" class="form-control" placeholder="project name" readonly>
+        </div>
+        <div class="form-group">
+            <label for="taskName">Task name</label>
+            <input id="taskName" type="text" class="form-control" placeholder="task name">
+        </div>
+        <div class="form-group">
+            <label for="startDate">Start date</label>
+            <input id="startDate" type="date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="endDate">End date</label>
+            <input id="endDate" type="date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="workHour">Work hour</label>
+            <input id="workHour" type="number" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="status">Status</label>
+            <input id="status" type="text" class="form-control">
+        </div>
+        <div class="text-center">
+            <button class="btn btn-outline-primary mr-3" routerLink='/home'>Cancel</button>
+            <button class="btn btn-outline-success">OK</button>
+        </div>
+    </form>
+</div>

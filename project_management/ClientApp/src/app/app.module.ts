@@ -22,6 +22,7 @@ import { CreateProjectProgressComponent } from './create-project-progress/create
 import { JoinTaskComponent } from './join-task/join-task.component';
 import { JoinProjectComponent } from './join-project/join-project.component';
 import { MainProjectsComponent } from './main-projects/main-projects.component';
+import { CreateTaskComponent } from './create-task/create-task.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { MainProjectsComponent } from './main-projects/main-projects.component';
     JoinTaskComponent,
     JoinProjectComponent,
     MainProjectsComponent,
+    CreateTaskComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -60,6 +62,7 @@ import { MainProjectsComponent } from './main-projects/main-projects.component';
       {path: 'join-task', component: JoinTaskComponent},
       {path: 'join-project', component: JoinProjectComponent},
       {path: 'projects', component: MainProjectsComponent},
+      {path: 'create-task', component: CreateTaskComponent},
     ]),
     BrowserModule,
   ],
